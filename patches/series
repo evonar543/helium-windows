@@ -30,5 +30,4 @@ helium/windows/updater/glue.patch
 helium/windows/updater/build-wiring.patch
 helium/windows/updater/register.patch
 helium/windows/updater/helper.patch
-helium/windows/updater/temp-helium-services-to-upstream.patch
 helium/windows/updater/fixup-wrong-version.patch
