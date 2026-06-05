@@ -418,6 +418,7 @@ jobs:
           from_artifact: true
 
       - name: Sign Helium binaries
+        if: false
         uses: azure/artifact-signing-action@v1
         with:
           azure-tenant-id: ${{ secrets.AZURE_TENANT_ID }}
@@ -438,6 +439,7 @@ jobs:
           from_artifact: false
 
       - name: Sign Helium installer
+        if: false
         uses: azure/artifact-signing-action@v1
         with:
           azure-tenant-id: ${{ secrets.AZURE_TENANT_ID }}
@@ -875,6 +877,7 @@ jobs:
           from_artifact: true
 
       - name: Sign Helium binaries
+        if: false
         uses: azure/artifact-signing-action@v1
         with:
           azure-tenant-id: ${{ secrets.AZURE_TENANT_ID }}
@@ -896,6 +899,7 @@ jobs:
           from_artifact: false
 
       - name: Sign Helium installer
+        if: false
         uses: azure/artifact-signing-action@v1
         with:
           azure-tenant-id: ${{ secrets.AZURE_TENANT_ID }}
