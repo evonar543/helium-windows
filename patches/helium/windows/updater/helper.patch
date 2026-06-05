@@ -656,6 +656,16 @@
  icudtl.dat: %(VersionDir)s\
  libEGL.dll: %(VersionDir)s\
  libGLESv2.dll: %(VersionDir)s\
+--- a/chrome/installer/util/prebuild/create_installer_string_rc.py
++++ b/chrome/installer/util/prebuild/create_installer_string_rc.py
+@@ -14,6 +14,7 @@ STRING_IDS = [
+   'IDS_ELEVATION_SERVICE_DESCRIPTION',
+   'IDS_INBOUND_MDNS_RULE_DESCRIPTION',
+   'IDS_INBOUND_MDNS_RULE_NAME',
++  'IDS_INSTALLING',
+   'IDS_INSTALL_EXISTING_VERSION_LAUNCHED',
+   'IDS_INSTALL_FAILED',
+   'IDS_INSTALL_HIGHER_VERSION',
 --- a/chrome/tools/build/win/FILES.cfg
 +++ b/chrome/tools/build/win/FILES.cfg
 @@ -85,6 +85,13 @@ FILES = [
